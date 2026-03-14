@@ -18,12 +18,17 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="page-header hide">
+    <header class="page-header">
       <div class="container">
         <a href="./index.html" class="logo"
           ><span class="logo-accent">WEB</span>STUDIO</a
         >
-        <nav>
+        <button class="mobile-menu-btn" type="button">
+          <svg class="mobile-menu-icon" width="24" hight="24">
+            <use href="./images/icons.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
+        <nav class="nav">
           <ul class="nav-list">
             <li><a href="./index.html" class="nav-link active">Studio</a></li>
             <li><a href="./portfolio.html" class="nav-link">Portfolio</a></li>
@@ -46,14 +51,14 @@
       </div>
     </header>
     <main>
-      <section class="hero hide">
+      <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="button">Order Service</button>
         </div>
       </section>
 
-      <section class="page-feature hide">
+      <section class="page-feature">
         <div class="container">
           <h2 class="visually-hidden">Our Features</h2>
           <ul class="feat">
@@ -112,12 +117,18 @@
         </div>
       </section>
 
-      <section class="team hide">
+      <section class="team">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-member">
-              <img src="./images/img.jpeg" alt="Mark Guerrero" width="264" />
+              <img
+                srcset="./images/img.jpeg 1x, ./images/img@2x.jpeg 2x"
+                src="./images/img.jpeg"
+                alt="Mark Guerrero"
+                width="264"
+                loading="lazy"
+              />
               <div class="team-info">
                 <h3 class="team-name">Mark Guerrero</h3>
                 <p class="team-position">Product Designer</p>
@@ -156,7 +167,13 @@
             </li>
 
             <li class="team-member">
-              <img src="./images/img2.jpeg" alt="Tom Ford" width="264" />
+              <img
+                srcset="./images/img2.jpeg 1x, ./images/img2@2x.jpeg 2x"
+                src="./images/img2.jpeg"
+                alt="Tom Ford"
+                width="264"
+                loading="lazy"
+              />
               <div class="team-info">
                 <h3 class="team-name">Tom Ford</h3>
                 <p class="team-position">Frontend Developer</p>
@@ -195,7 +212,13 @@
             </li>
 
             <li class="team-member">
-              <img src="./images/img3.jpeg" alt="Camila Garcia" width="264" />
+              <img
+                srcset="./images/img3.jpeg 1x, ./images/img3@2x.jpeg 2x"
+                src="./images/img3.jpeg"
+                alt="Camila Garcia"
+                width="264"
+                loading="lazy"
+              />
               <div class="team-info">
                 <h3 class="team-name">Camila Garcia</h3>
                 <p class="team-position">Marketing</p>
@@ -234,7 +257,13 @@
             </li>
 
             <li class="team-member">
-              <img src="./images/img4.jpeg" alt="Daniel Wilson" width="264" />
+              <img
+                srcset="./images/img4.jpeg 1x, ./images/img4@2x.jpeg 2x"
+                src="./images/img4.jpeg"
+                alt="Daniel Wilson"
+                width="264"
+                loading="lazy"
+              />
               <div class="team-info">
                 <h3 class="team-name">Daniel Wilson</h3>
                 <p class="team-position">UI Designer</p>
@@ -282,9 +311,14 @@
             <li class="port-item">
               <div class="project-overlay-wrapper">
                 <img
+                  srcset="
+                    ./images/imgportfolio1.jpg    1x,
+                    ./images/imgportfolio1@2x.jpg 2x
+                  "
                   src="./images/imgportfolio1.jpg"
                   alt="Banking App"
                   width="360"
+                  loading="lazy"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -301,9 +335,14 @@
             <li class="port-item">
               <div class="project-overlay-wrapper">
                 <img
+                  srcset="
+                    ./images/imgportfolio2.jpg    1x,
+                    ./images/imgportfolio2@2x.jpg 2x
+                  "
                   src="./images/imgportfolio2.jpg"
                   alt="Cashless Payment"
                   width="360"
+                  loading="lazy"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -320,9 +359,14 @@
             <li class="port-item">
               <div class="project-overlay-wrapper">
                 <img
+                  srcset="
+                    ./images/imgportfolio3.jpg    1x,
+                    ./images/imgportfolio3@2x.jpg 2x
+                  "
                   src="./images/imgportfolio3.jpg"
                   alt="Meditation App"
                   width="360"
+                  loading="lazy"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -339,9 +383,14 @@
             <li class="port-item">
               <div class="project-overlay-wrapper">
                 <img
+                  srcset="
+                    ./images/imgportfolio4.jpg    1x,
+                    ./images/imgportfolio4@2x.jpg 2x
+                  "
                   src="./images/imgportfolio4.jpg"
                   alt="Taxi Service"
                   width="360"
+                  loading="lazy"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -357,9 +406,14 @@
             <li class="port-item">
               <div class="project-overlay-wrapper">
                 <img
+                  srcset="
+                    ./images/imgportfolio5.jpg    1x,
+                    ./images/imgportfolio5@2x.jpg 2x
+                  "
                   src="./images/imgportfolio5.jpg"
                   alt="Screen Illustrations"
                   width="360"
+                  loading="lazy"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -375,9 +429,14 @@
             <li class="port-item">
               <div class="project-overlay-wrapper">
                 <img
+                  srcset="
+                    ./images/imgportfolio6.jpg    1x,
+                    ./images/imgportfolio6@2x.jpg 2x
+                  "
                   src="./images/imgportfolio6.jpg"
                   alt="Online Courses"
                   width="360"
+                  loading="lazy"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -395,7 +454,7 @@
       </section>
     </main>
 
-    <footer class="footer hide">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="left-side">
           <a href="./index.html" class="logo-footer">
@@ -459,7 +518,8 @@
         </div>
       </div>
     </footer>
-    <div class="modal-overlay hide">
+
+    <div class="modal-overlay">
       <div class="modal">
         <form name="issue_report_form" class="form" autocomplete="off">
           <button type="button" class="modal-close-button">
@@ -542,6 +602,70 @@
           <button type="submit" class="button form-button">Send</button>
         </form>
       </div>
+    </div>
+
+    <div class="mobile-menu">
+      <button type="button" class="mobile-menu-btn">
+        <svg class="mobile-menu-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu-nav">
+        <li class="mobile-menu-nav-item">
+          <a class="mobile-menu-nav-link active" href="#">Studio</a>
+        </li>
+        <li class="mobile-menu-nav-item">
+          <a class="mobile-menu-nav-link" href="#">Portfolio</a>
+        </li>
+        <li class="mobile-menu-nav-item">
+          <a class="mobile-menu-nav-link" href="#">Contacts</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu-address">
+        <li class="mobile-menu-address-item">
+          <a
+            class="mobile-menu-address-link accent-text"
+            href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li class="mobile-menu-address-item">
+          <a class="mobile-menu-address-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-menu-socials">
+        <li class="social-item">
+          <a href="#" class="social-link">
+            <svg class="feature-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="#" class="social-link">
+            <svg class="feature-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="social-item">
+          <a href="#" class="social-link">
+            <svg class="feature-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="#" class="social-link">
+            <svg class="feature-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
   </body>
 </html>
