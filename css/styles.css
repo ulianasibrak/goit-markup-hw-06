@@ -89,6 +89,7 @@ p {
 .page-header .container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 56px;
 }
 @media screen and (min-width:768px) {
@@ -105,7 +106,12 @@ p {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #2E2F42;
-    margin-right: 120px;
+    margin-right: 0px;
+}
+@media screen and (min-width: 768px) {
+    .logo {
+        margin-right: 120px;
+    }
 }
 @media screen and (min-width:1158px) {
     .logo {
