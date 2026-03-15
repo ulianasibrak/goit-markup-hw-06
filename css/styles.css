@@ -470,13 +470,12 @@ p {
     }
 }
 .team-title {
-    max-width: 162px;
-    max-height: 40px;
     margin-bottom: 72px;
     font-weight: 700;
         font-size: 36px;
         line-height: 1.11111;
         letter-spacing: 0.02em;
+        text-align: center;
 }
 .team-list {
     display: flex;
@@ -708,6 +707,10 @@ p {
     .left-side {
         margin-right: 120px;
         }
+    .right-side {
+        margin-right: 80px;
+                   
+                }
 }
 .logo-footer {
     font-family: 'Raleway', sans-serif;
