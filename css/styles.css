@@ -677,6 +677,11 @@ p {
     padding: 96px 0;
     display: block;
 }
+@media screen and (min-width: 1158px) {
+    .footer {
+        padding: 100px 0;
+    }
+}
 @media screen and (max-width: 767.98px) {
     .footer-container {
         text-align: center;
@@ -697,6 +702,9 @@ p {
         text-align: left;
         column-gap: 24px;
         row-gap: 72px;
+                max-width: 584px;
+                    margin-left: auto;
+                    margin-right: auto;
     }
 }
 @media screen and (min-width: 1158px) {
@@ -704,6 +712,9 @@ p {
          flex-wrap: nowrap;
          gap: 0;
         align-items: baseline;
+                max-width: 1125px;
+                    margin-left: auto;
+                    margin-right: auto;
     }
 }
 .left-side {
@@ -712,12 +723,19 @@ p {
 @media screen and (min-width:1158px) {
     .left-side {
         margin-right: 120px;
+        flex-shrink: 0;
+            width: 264px;
         }
     .right-side {
         margin-right: 80px;
-                   
+                flex-shrink: 0;
+                    width: 208px;
                 }
+     .register {
+        flex-shrink: 0;
+        }
 }
+
 .logo-footer {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -1010,9 +1028,7 @@ textarea:focus {
             justify-content: flex-start;
             flex-direction: row;
             flex-wrap: wrap;
-           
     }
-    
 }
 .custom-checkbox {
     display: inline-flex;
