@@ -1013,7 +1013,6 @@ textarea:focus {
     border-color: #4D5AE5;
 }
 .checkbox-label {
-    display: flex;
     align-items: center;
     gap: 8px;
     font-size: 12px;
@@ -1022,17 +1021,12 @@ textarea:focus {
     color: #8E8F99;
     padding-bottom: 0;
         margin-bottom: 24px;
-}
-@media screen and (max-width:767.98px){
-    .checkbox-label {
-            justify-content: flex-start;
-            flex-direction: row;
-            flex-wrap: wrap;
-    }
+        display: block;
 }
 .custom-checkbox {
     display: inline-flex;
-    align-items: center;
+    vertical-align: middle;
+        margin-right: 8px;
     justify-content: center;
     width: 16px;
     height: 16px;
